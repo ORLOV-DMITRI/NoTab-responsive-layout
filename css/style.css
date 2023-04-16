@@ -362,6 +362,7 @@ body {
 .scanner__title {
   margin-bottom: 23px;
 }
+
 .integration {
   /* .integration_content */
   padding-bottom: 220px;
@@ -414,7 +415,6 @@ body {
   /* .qr-code__content */
   /* .qr-code__title */
   /* .qr-code__subtitle */
-  /* .qr-code__download */
   /* .qr-code__img */
 }
 .qr-code__inner {
