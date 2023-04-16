@@ -837,6 +837,14 @@ input {
   z-index: 1;
 }
 
+@media (max-height: 977px) {
+  .intro__phone {
+    height: 60vh;
+  }
+  .intro__img::after {
+    height: 60vh;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;

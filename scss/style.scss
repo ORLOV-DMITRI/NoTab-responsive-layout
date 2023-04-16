@@ -770,6 +770,16 @@ input {
   bottom: -80%;
   z-index: 1;
 }
+@media (max-height: 977px) {
+  .intro{
+    &__phone{
+      height: 60vh;
+    }
+    &__img::after{
+      height: 60vh;
+    }
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
