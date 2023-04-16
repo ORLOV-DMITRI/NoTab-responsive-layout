@@ -837,19 +837,6 @@ input {
   z-index: 1;
 }
 
-@media (max-height: 977px) {
-  .intro__phone {
-    height: 60vh;
-  }
-  .intro__img::after {
-    height: 60vh;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
 @media (max-width: 1200px) {
   .container {
     margin: 0 20px;
@@ -1075,6 +1062,34 @@ input {
   .easy-order__img-cards {
     font-size: 1.25rem;
     line-height: 25px;
+  }
+}
+@media (max-height: 977px) {
+  .intro__phone {
+    height: 60vh;
+  }
+  .intro__img::after {
+    height: 60vh;
+  }
+}
+@media (max-height: 977px) and (min-width: 1200px) {
+  .header__img {
+    width: 180px;
+    height: 90px;
+  }
+  .intro__title {
+    font-size: 3.375rem;
+    margin-bottom: 50px;
+  }
+  .intro__subtitle {
+    font-size: 1.0625rem;
+  }
+  .download__text {
+    font-size: 1.5625rem;
+  }
+  .download__img {
+    width: 140px;
+    height: 40px;
   }
 }
 @media (max-width: 940px) {
