@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Regular"), local("NotoSans-Regular"),
+      url("../fonts/noto-sans.woff2") format("woff2"),
+      url("../fonts/noto-sans.woff") format("woff");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Medium"), local("NotoSans-Medium"),
+      url("../fonts/noto-sans-display-medium.woff2") format("woff2"),
+      url("../fonts/noto-sans-display-medium.woff") format("woff");
+    font-weight: 500;
+  } 
+  @font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Bold"), local("NotoSans-Bold"),
+      url("../fonts/noto-sans-bold.woff2") format("woff2"),
+      url("../fonts/noto-sans-bold.woff") format("woff");
+    font-weight: 700;
+  }/*# sourceMappingURL=fonts.css.map */
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), local("Montserrat-Bold"),
+      url("../fonts/montserrat-bold.woff2") format("woff2"),
+      url("../fonts/montserrat-bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), local("Roboto-Bold"),
+      url("../fonts/roboto-bold.woff2") format("woff2"),
+      url("../fonts/roboto-bold.woff") format("woff");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), local("Roboto-Medium"),
+      url("../fonts/roboto-medium.woff2") format("woff2"),
+      url("../fonts/roboto-medium.woff") format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Avenir";
+    src: local("Avenir"), local("Avenir-Medium"),
+      url("../fonts/Avenir-Medium.woff") format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Avenir";
+    src: local("Avenir"), local("Avenir-Heavy"),
+      url("../fonts/Avenir-Heavy.woff") format("woff");
+    font-weight: 800;
+  }
