@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 14px;
+  font-size: rem-calc(14);
   line-height: 19px;
   z-index: 4;
   transform: translateY(100%);
@@ -50,7 +50,7 @@
     
   }
   @media (max-width: 540px) {
-    font-size: 10px;
+    font-size: rem-calc(10);
     &__inner{
         padding: 15px 0 15px 0;
     }
@@ -59,7 +59,7 @@
     }
   }
   @media (max-width: 376px) {
-    font-size: 9px;
+    font-size: rem-calc(9);
     &__inner{
         padding: 13px 0 13px 0;
         gap: 16%;

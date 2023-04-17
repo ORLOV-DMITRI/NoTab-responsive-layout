@@ -38,13 +38,21 @@
   src: local("Avenir"), local("Avenir-Heavy"), url("../fonts/Avenir-Heavy.woff") format("woff");
   font-weight: 800;
 }
+body {
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400;
+  background-color: #020002;
+  color: white;
+  overflow-x: hidden;
+}
+
 .cookie {
   background-color: #212834;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   z-index: 4;
   -webkit-transform: translateY(100%);
@@ -102,7 +110,7 @@
 }
 @media (max-width: 540px) {
   .cookie {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .cookie__inner {
     padding: 15px 0 15px 0;
@@ -113,7 +121,7 @@
 }
 @media (max-width: 376px) {
   .cookie {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
   .cookie__inner {
     padding: 13px 0 13px 0;
@@ -122,14 +130,6 @@
   .cookie__btn {
     padding: 10px 30px 10px 30px;
   }
-}
-
-body {
-  font-family: Noto Sans, sans-serif;
-  font-weight: 400;
-  background-color: #020002;
-  color: white;
-  overflow-x: hidden;
 }
 
 .title {

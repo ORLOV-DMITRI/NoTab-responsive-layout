@@ -1,5 +1,4 @@
 @import "fonts";
-@import "cookie";
 @import "functions";
 body {
   font-family: Noto Sans, sans-serif;
@@ -7,6 +6,75 @@ body {
   background-color: #020002;
   color: #ffff;
   overflow-x: hidden;
+}
+.cookie {
+  background-color: #212834;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: rem-calc(14);
+  line-height: 19px;
+  z-index: 4;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+
+  &.show-cookie {
+    transform: translateY(0);
+    transition: transform 0.6s ease;
+  }
+
+  // .cookie__text
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 22px 0;
+  }
+
+  // .cookie__btn
+
+  &__btn {
+    text-transform: uppercase;
+    padding: 15px 55px 15px 55px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  &__btn:hover {
+    transform: scale(1.1);
+  }
+  &__btn:active {
+    transform: scale(1);
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+    &__inner {
+      gap: 10%;
+    }
+  }
+  @media (max-width: 540px) {
+    font-size: rem-calc(10);
+    &__inner {
+      padding: 15px 0 15px 0;
+    }
+    &__btn {
+      padding: 12px 50px 12px 50px;
+    }
+  }
+  @media (max-width: 376px) {
+    font-size: rem-calc(9);
+    &__inner {
+      padding: 13px 0 13px 0;
+      gap: 16%;
+    }
+    &__btn {
+      padding: 10px 30px 10px 30px;
+    }
+  }
 }
 
 .title {
@@ -51,10 +119,10 @@ body {
   &__text {
     border-bottom: 1px solid #ffff;
   }
-  &__login:hover &__icon{
+  &__login:hover &__icon {
     transform: scale(1.1);
   }
-  &__login:hover &__text{
+  &__login:hover &__text {
     border-bottom: 2px solid #1212d6;
     color: #ffffffc8;
   }
@@ -173,10 +241,9 @@ body {
     display: flex;
     gap: 30px;
   }
-  &__link:hover{
+  &__link:hover {
     transform: scale(1.1);
   }
-
 }
 .contact {
   padding: 180px 0 230px 0;
@@ -221,8 +288,8 @@ body {
     line-height: 33px;
     border-bottom: 1px solid #ffff;
   }
-  &__link:hover{
-    border-bottom: 2px solid #1212d6 ;
+  &__link:hover {
+    border-bottom: 2px solid #1212d6;
     opacity: 0.7;
   }
 }
@@ -687,17 +754,17 @@ body {
     color: #ffffff;
     cursor: pointer;
   }
-  &__btn:hover{
+  &__btn:hover {
     border: 1px solid red;
     opacity: 1.2;
     transform: scale(1.04);
-      z-index: 4;
-      color: #ffffffd0;
-      box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
+    z-index: 4;
+    color: #ffffffd0;
+    box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
   }
-  &__btn:active{
+  &__btn:active {
     transform: scale(1);
-    box-shadow: none ;
+    box-shadow: none;
     color: #ffff;
     border: 1px solid #ffffff;
   }
