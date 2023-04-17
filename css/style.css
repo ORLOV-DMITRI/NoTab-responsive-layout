@@ -111,7 +111,7 @@
     padding: 12px 50px 12px 50px;
   }
 }
-@media (max-width: 376) {
+@media (max-width: 376px) {
   .cookie {
     font-size: 9px;
   }
