@@ -1,8 +1,12 @@
-// const cookie = document.querySelector('.cookie');
+const cookie = document.querySelector('.cookie');
+const btnCookie = document.querySelector('.cookie__btn');
 
-// setTimeout(() => {
-//   cookie.classList.add('cookie-appearance');
-// }, 1000);
+setTimeout(() => {
+  cookie.classList.add('show-cookie');
+}, 1500);
+btnCookie.addEventListener('click', () => {
+    cookie.classList.remove('show-cookie');
+})
 // Приве
 
 const inputName = document.querySelector(".get-touch__name");
@@ -25,3 +29,6 @@ console.log(input.children[0].value);
 //   }
 //   if(inputVenueCity.value )
 // });
+
+
+
