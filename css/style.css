@@ -154,6 +154,11 @@ body {
 
 .header {
   /* .header__nav */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  z-index: 4;
+  position: relative;
   /* .header__login */
   /* .header__text */
 }
@@ -179,6 +184,14 @@ body {
 }
 .header__text {
   border-bottom: 1px solid white;
+}
+.header__login:hover .header__icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__login:hover .header__text {
+  border-bottom: 2px solid #1212d6;
+  color: rgba(255, 255, 255, 0.7843137255);
 }
 
 .intro {
@@ -312,6 +325,10 @@ body {
   display: flex;
   gap: 30px;
 }
+.download__link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
 .contact {
   padding: 180px 0 230px 0;
@@ -354,6 +371,10 @@ body {
   font-size: 1.5rem;
   line-height: 33px;
   border-bottom: 1px solid white;
+}
+.contact__link:hover {
+  border-bottom: 2px solid #1212d6;
+  opacity: 0.7;
 }
 
 .mission {
@@ -822,6 +843,25 @@ body {
   border: 1px solid #ffffff;
   border-radius: 10px;
   color: #ffffff;
+  cursor: pointer;
+}
+.get-touch__btn:hover {
+  border: 1px solid red;
+  opacity: 1.2;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  z-index: 4;
+  color: rgba(255, 255, 255, 0.8156862745);
+  -webkit-box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
+          box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
+}
+.get-touch__btn:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  border: 1px solid #ffffff;
 }
 
 input {
@@ -1364,10 +1404,9 @@ input {
     display: none;
   }
   .header__text {
-    font-weight: 500;
     font-size: 1rem;
     line-height: 19px;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
   }
   .header__login {
     margin-right: 20px;

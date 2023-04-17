@@ -1,5 +1,5 @@
 @import "fonts";
-@import 'cookie';
+@import "cookie";
 @import "functions";
 body {
   font-family: Noto Sans, sans-serif;
@@ -28,6 +28,12 @@ body {
 }
 .header {
   /* .header__nav */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  z-index: 4;
+  position: relative;
+
   &__nav {
     display: flex;
     align-items: center;
@@ -44,6 +50,13 @@ body {
   /* .header__text */
   &__text {
     border-bottom: 1px solid #ffff;
+  }
+  &__login:hover &__icon{
+    transform: scale(1.1);
+  }
+  &__login:hover &__text{
+    border-bottom: 2px solid #1212d6;
+    color: #ffffffc8;
   }
 }
 
@@ -160,6 +173,10 @@ body {
     display: flex;
     gap: 30px;
   }
+  &__link:hover{
+    transform: scale(1.1);
+  }
+
 }
 .contact {
   padding: 180px 0 230px 0;
@@ -203,6 +220,10 @@ body {
     font-size: rem-calc(24);
     line-height: 33px;
     border-bottom: 1px solid #ffff;
+  }
+  &__link:hover{
+    border-bottom: 2px solid #1212d6 ;
+    opacity: 0.7;
   }
 }
 
@@ -664,6 +685,21 @@ body {
     border: 1px solid #ffffff;
     border-radius: 10px;
     color: #ffffff;
+    cursor: pointer;
+  }
+  &__btn:hover{
+    border: 1px solid red;
+    opacity: 1.2;
+    transform: scale(1.04);
+      z-index: 4;
+      color: #ffffffd0;
+      box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
+  }
+  &__btn:active{
+    transform: scale(1);
+    box-shadow: none ;
+    color: #ffff;
+    border: 1px solid #ffffff;
   }
 }
 input {
@@ -1240,10 +1276,9 @@ input {
       display: none;
     }
     &__text {
-      font-weight: 500;
       font-size: rem-calc(16);
       line-height: 19px;
-      padding-bottom: 6px;
+      padding-bottom: 2px;
     }
     &__login {
       margin-right: 20px;
