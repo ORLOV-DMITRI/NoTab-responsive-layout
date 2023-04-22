@@ -1,34 +1,38 @@
-const cookie = document.querySelector('.cookie');
-const btnCookie = document.querySelector('.cookie__btn');
+const cookie = document.querySelector(".cookie");
+const btnCookie = document.querySelector(".cookie__btn");
 
 setTimeout(() => {
-  cookie.classList.add('show-cookie');
+  cookie.classList.add("show-cookie");
 }, 1500);
-btnCookie.addEventListener('click', () => {
-    cookie.classList.remove('show-cookie');
-})
-// Приве
+btnCookie.addEventListener("click", () => {
+  cookie.classList.remove("show-cookie");
+});
 
-const inputName = document.querySelector(".get-touch__name");
-const inputVenueName = document.querySelector(".get-touch__venue-name");
-const inputVenueCity = document.querySelector(".get-touch__venue-city");
-const inputStateCity = document.querySelector(".get-touch__state-city");
-const inputEmail = document.querySelector(".get-touch__email");
-const inputSubject = document.querySelector(".get-touch__subject");
-const inputMessage = document.querySelector(".get-touch__message");
+const phone = document.querySelector(".mission__img");
+const text = document.querySelector(".mission__content");
 
-const input = document.querySelector(".get-touch__input");
-const sendBtn = document.querySelector(".get-touch__btn");
-console.log(input.children[0].value);
-
-// sendBtn.addEventListener("click", () => {
-//   for (let i = 0; i < input.children.length; i++) {
-//     if (input.children[i].value === "") {
-//       console.log(input.children[2].classList.add("error"));
-//     }
-//   }
-//   if(inputVenueCity.value )
-// });
-
-
-
+const options = {
+  rootMargin: "0px",
+  threshold: [0.5],
+};
+const trueCallback = function (entries, observer) {
+  entries.forEach((entry) => {
+    const { target, isIntersecting } = entry;
+    if (window.innerWidth >= 940) {
+      if (isIntersecting) {
+        phone.classList.add("run");
+        text.classList.add("text-trans");
+        setTimeout(() => {
+          phone.classList.add("rotate");
+        }, 1000);
+      } else {
+        phone.classList.remove("rotate");
+        text.classList.remove("text-trans");
+        phone.classList.remove("run");
+      }
+    }
+  });
+};
+const observer = new IntersectionObserver(trueCallback, options);
+const target = document.querySelector(".mission");
+observer.observe(target);
