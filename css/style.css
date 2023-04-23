@@ -61,14 +61,7 @@ body {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-.cookie.show-cookie {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.6s ease;
-  transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  opacity: 0;
 }
 .cookie__inner {
   width: 100%;
@@ -132,6 +125,48 @@ body {
   }
 }
 
+.show-cookie {
+  -webkit-animation: cookie 2s ease forwards;
+          animation: cookie 2s ease forwards;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@-webkit-keyframes cookie {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cookie {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.close-cookie {
+  -webkit-animation: close-cookie 2s ease forwards;
+          animation: close-cookie 2s ease forwards;
+}
+
+@-webkit-keyframes close-cookie {
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes close-cookie {
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+}
 .title {
   font-family: Montserrat, sans-serif;
   font-size: 3.1875rem;
@@ -181,8 +216,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .header__icon {
   fill: #ffffff;
@@ -196,7 +231,7 @@ body {
   fill: #67a3f7;
 }
 .header__login:hover .header__text {
-  border-bottom: 2px solid #67a3f7;
+  border-bottom: 1px solid #67a3f7;
   color: #67a3f7;
 }
 
@@ -377,15 +412,14 @@ body {
   font-size: 1.5rem;
   line-height: 33px;
   border-bottom: 1px solid white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .contact__link:hover {
-  border-bottom: 2px solid #1212d6;
-  opacity: 0.7;
+  border-bottom: 1px solid #67a3f7;
+  color: #67a3f7;
 }
 
-.mission {
-  padding-bottom: 283px;
-}
 .mission__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,6 +427,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
 }
 .mission__img {
   -webkit-transform: translateX(-70vw);
@@ -455,8 +490,8 @@ body {
 
 @-webkit-keyframes run {
   50% {
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
+    -webkit-transform: translateX(-10);
+            transform: translateX(-10);
   }
   100% {
     -webkit-transform: translateX(0) rotate(-90deg);
@@ -466,8 +501,8 @@ body {
 
 @keyframes run {
   50% {
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
+    -webkit-transform: translateX(-10);
+            transform: translateX(-10);
   }
   100% {
     -webkit-transform: translateX(0) rotate(-90deg);
@@ -480,6 +515,34 @@ body {
   opacity: 0.7;
 }
 
+.delete {
+  -webkit-animation: delet 3s ease forwards;
+          animation: delet 3s ease forwards;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes delet {
+  50% {
+    -webkit-transform: translateX(0) rotate(-45deg);
+            transform: translateX(0) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(-70vw);
+            transform: translateX(-70vw);
+  }
+}
+
+@keyframes delet {
+  50% {
+    -webkit-transform: translateX(0) rotate(-45deg);
+            transform: translateX(0) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(-70vw);
+            transform: translateX(-70vw);
+  }
+}
 .scanner {
   padding: 467px 0 200px 0;
   background-image: url("../img/scanner/ScannBg.jpg");
@@ -878,6 +941,7 @@ body {
   background: #ffffff;
   border: 1px solid #5c5c5c;
   border-radius: 10px;
+  width: 100%;
 }
 .get-touch__btn {
   font-family: "Montserrat", sans-serif;
@@ -916,6 +980,27 @@ input {
   border: 1px solid #5c5c5c;
   border-radius: 10px;
   padding: 29px;
+  color: #010101;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input::-moz-placeholder {
+  color: #bfbfbf;
+}
+
+input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+input::placeholder {
   color: #bfbfbf;
 }
 

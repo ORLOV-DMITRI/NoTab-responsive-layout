@@ -127,7 +127,7 @@
             <h4 class="contact__title">
               Would like to become a member, please contact us
             </h4>
-            <a class="contact__link" href="#">support@notab.com</a>
+            <a class="contact__link" href="mailto:support@notab.com">support@notab.com</a>
           </div>
           <div class="contact__card contact__card--right">
             <h4 class="contact__title">Already a partner?</h4>
@@ -414,54 +414,39 @@
               shortly.
             </p>
           </div>
-          <div class="get-touch__input">
-            <input
-              class="get-touch__name"
-              type="text"
-              name="Name"
-              placeholder="Name"
-            />
-            <input
-              class="get-touch__venue-name"
-              type="text"
-              name="Venue Name"
-              placeholder="Venue Name"
-            />
-            <div class="get-touch__city">
-              <input
-                class="get-touch__venue-city"
-                type="text"
-                name="Venue City"
-                placeholder="Venue City"
-              />
-              <input
-                class="get-touch__state-city"
-                type="text"
-                name="State City"
-                placeholder="State City"
-              />
+          <form class="get-touch__input">
+            <div class="get-touch__name">
+              <input type="text" name="Name" placeholder="Name" />
             </div>
-            <input
-              class="get-touch__email"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-            <input
-              class="get-touch__subject"
-              type="text"
-              name="Subject"
-              placeholder="Subject"
-            />
-            <textarea
-              class="get-touch__message"
-              name="Message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button class="get-touch__btn">Send</button>
+            <div class="get-touch__venue-name">
+              <input type="text" name="Venue Name" placeholder="Venue Name" />
+            </div>
+
+            <div class="get-touch__city">
+              <div class="get-touch__venue-city">
+                <input type="text" name="Venue City" placeholder="Venue City" />
+              </div>
+              <div class="get-touch__state-city">
+                <input type="text" name="State City" placeholder="State City" />
+              </div>
+            </div>
+            <div class="get-touch__email">
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="get-touch__subject">
+              <input type="text" name="Subject" placeholder="Subject" />
+            </div>
+            <div class="get-touch__message">
+              <textarea
+                name="Message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button class="get-touch__btn">Send</button>
+          </form>
+         
         </div>
       </div>
     </section>
