@@ -252,7 +252,7 @@ body {
   }
 }
 .contact {
-  padding: 180px 0 230px 0;
+  padding: 180px 0 300px 0;
 
   /* .contact__inner */
   &__inner {
@@ -302,12 +302,10 @@ body {
 
 .mission {
   // .mission__inner
-  // padding-bottom: 283px;
-  min-height: 100vh;
+  padding-bottom: 283px;
 
   &__inner {
     display: flex;
-    min-height: 80vh;
     align-items: center;
   }
 
@@ -322,7 +320,7 @@ body {
   }
   &__img-phone {
     object-fit: contain;
-    width: 70vw;
+    width: 50vw;
     height: 45vh;
   }
   &__img::after {
@@ -331,7 +329,7 @@ body {
     opacity: 0.1;
     filter: blur(118px);
     position: absolute;
-    width: 70vw;
+    width: 51vw;
     height: 45vh;
     top: 0;
     left: 0;
@@ -370,10 +368,15 @@ body {
   }
 }
 .run {
-  transform: translateX(0);
+  animation: run 3s ease forwards;
 }
-.rotate {
-  transform: rotate(-90deg) translateX(0);
+@keyframes run {
+  50% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(0) rotate(-90deg);
+  }
 }
 .text-trans {
   transform: translateX(0);
@@ -778,11 +781,11 @@ body {
     cursor: pointer;
   }
   &__btn:hover {
-    border: 1px solid #67a3f7;;
+    border: 1px solid #67a3f7;
     opacity: 1.2;
     transform: scale(1.04);
     z-index: 4;
-    color:  #67a3f7;
+    color: #67a3f7;
     box-shadow: 0px 0px 27px 11px rgba(242, 246, 249, 0.2);
   }
   &__btn:active {
@@ -854,6 +857,8 @@ input {
     font-weight: 500;
     max-width: 200px;
     z-index: 2;
+    transition: 0.2s ease;
+
   }
 
   // .footer__date
@@ -870,6 +875,16 @@ input {
   // .footer__privacy-terms
   &__privacy-terms {
     margin-bottom: 25px;
+    transition: 0.3s ease;
+
+  }
+  &__privacy-policy{
+    transition: 0.3s ease;
+
+  }
+  &__date{
+    transition: 0.2s ease;
+
   }
   &__privacy-terms:hover {
     color: #67a3f7;
@@ -877,8 +892,11 @@ input {
   &__privacy-policy:hover {
     color: #67a3f7;
   }
-  &__date:hover{
-        color: #67a3f7;
+  &__date:hover {
+    color: #67a3f7;
+  }
+  &__contact-info:hover {
+    color: #67a3f7;
   }
 }
 .footer::after {
