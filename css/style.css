@@ -221,6 +221,8 @@ body {
 }
 .header__icon {
   fill: #ffffff;
+  width: 26px;
+  height: 26px;
 }
 .header__text {
   border-bottom: 1px solid white;
@@ -333,6 +335,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.intro__AppIcon {
+  width: 164px;
+  height: 54px;
+}
+.intro__GoogleIcon {
+  width: 185px;
+  height: 54px;
+}
 
 .intro::after {
   content: "";
@@ -366,13 +376,23 @@ body {
   display: flex;
   gap: 30px;
 }
+.download__link {
+  fill: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .download__link:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  fill: #67a3f7;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .contact {
-  padding: 180px 0 300px 0;
+  padding: 180px 0 100px 0;
   /* .contact__inner */
   /* .contact__card */
   /* .contact__card-left */
@@ -942,8 +962,16 @@ body {
   border: 1px solid #5c5c5c;
   border-radius: 10px;
   width: 100%;
+  height: 200px;
+}
+.get-touch__message textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 .get-touch__btn {
+  width: 50%;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;

@@ -135,6 +135,8 @@ body {
 
   &__icon {
     fill: #ffffff;
+    width: 26px;
+    height: 26px;
   }
   /* .header__text */
   &__text {
@@ -237,6 +239,14 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  &__AppIcon {
+    width: 164px;
+    height: 54px;
+  }
+  &__GoogleIcon {
+    width: 185px;
+    height: 54px;
+  }
 }
 .intro::after {
   content: "";
@@ -263,12 +273,18 @@ body {
     display: flex;
     gap: 30px;
   }
+  &__link {
+    fill: white;
+    display: flex;
+    align-items: center;
+  }
   &__link:hover {
-    transform: scale(1.1);
+    fill: #67a3f7;
+    transform: scale(1.05);
   }
 }
 .contact {
-  padding: 180px 0 300px 0;
+  padding: 180px 0 100px 0;
 
   /* .contact__inner */
   &__inner {
@@ -320,7 +336,6 @@ body {
 .mission {
   // .mission__inner
   // padding-bottom: 283px;
-
 
   &__inner {
     display: flex;
@@ -798,8 +813,16 @@ body {
     border: 1px solid #5c5c5c;
     border-radius: 10px;
     width: 100%;
+    height: 200px;
+  }
+  &__message textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
   }
   &__btn {
+    width: 50%;
+    margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: rem-calc(24);
@@ -835,7 +858,7 @@ input {
   color: #010101;
   width: 100%;
 }
-input::placeholder{
+input::placeholder {
   color: #bfbfbf;
 }
 .error {
