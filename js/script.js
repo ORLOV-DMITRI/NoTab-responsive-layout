@@ -1,16 +1,16 @@
 const cookie = document.querySelector(".cookie");
 const btnCookie = document.querySelector(".cookie__btn");
 
-// setTimeout(() => {
-//   cookie.classList.add("show-cookie");
-// }, 1500);
+setTimeout(() => {
+  cookie.classList.add("show-cookie");
+}, 1500);
 btnCookie.addEventListener("click", () => {
   cookie.style.opacity = 1;
   cookie.style.transform = "translateY(0)";
   cookie.classList.remove("show-cookie");
   setTimeout(() => {
     cookie.classList.add("close-cookie");
-  }, 500);
+  }, 100);
 });
 
 const phone = document.querySelector(".mission__img");

@@ -38,6 +38,8 @@ body {
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
+    cursor: pointer;
+    transition: 0.3 ease;
   }
   &__btn:hover {
     transform: scale(1.1);
@@ -374,7 +376,7 @@ body {
   &__content {
     width: 380px;
     transform: translateX(-28vw);
-    transition: 1s ease;
+    transition: 3s ease;
   }
 
   // .mission__title
@@ -808,7 +810,7 @@ body {
   }
   // .get-touch__message
   &__message {
-    padding: 29px;
+   
     background: #ffffff;
     border: 1px solid #5c5c5c;
     border-radius: 10px;
@@ -834,6 +836,7 @@ body {
     border-radius: 10px;
     color: #ffffff;
     cursor: pointer;
+    transition: 0.3s ease;
   }
   &__btn:hover {
     border: 1px solid #67a3f7;
@@ -849,6 +852,9 @@ body {
     color: #ffff;
     border: 1px solid #ffffff;
   }
+}
+textarea{
+  padding: 29px;
 }
 input {
   background: #ffffff;

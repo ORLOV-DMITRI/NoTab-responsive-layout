@@ -83,6 +83,9 @@ body {
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.3 ease;
+  transition: 0.3 ease;
 }
 .cookie__btn:hover {
   -webkit-transform: scale(1.1);
@@ -480,8 +483,8 @@ body {
   width: 380px;
   -webkit-transform: translateX(-28vw);
           transform: translateX(-28vw);
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
 }
 .mission__title {
   margin-bottom: 23px;
@@ -957,7 +960,6 @@ body {
           flex-grow: 1;
 }
 .get-touch__message {
-  padding: 29px;
   background: #ffffff;
   border: 1px solid #5c5c5c;
   border-radius: 10px;
@@ -983,6 +985,8 @@ body {
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .get-touch__btn:hover {
   border: 1px solid #67a3f7;
@@ -1001,6 +1005,10 @@ body {
           box-shadow: none;
   color: white;
   border: 1px solid #ffffff;
+}
+
+textarea {
+  padding: 29px;
 }
 
 input {
